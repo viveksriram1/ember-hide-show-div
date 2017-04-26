@@ -1,0 +1,14 @@
+
+{{#if isShowing}}
+  Hello
+<button {{action 'hide'}}> Show </button>
+{{else}}
+<button {{action 'show'}}> Hide </button>
+{{/if}}
+
+<button {{action 'showDiv'}}>Show Div</button>
+<br>
+<br>
+{{#if showDiv}}
+   {{temp-animation}}
+{{/if}}

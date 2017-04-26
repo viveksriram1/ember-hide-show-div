@@ -1,0 +1,11 @@
+<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
+  {{#if isShowing}}
+  <h2>{{name}}</h2>
+  <h4>{{type}} type - #{{number}}</h4>
+  <p>{{profile}}</p>
+  <button {{action 'profileHide'}} class="btn btn-primary" >Show Image</button>
+  {{else}}
+  <img src="{{image}}" class="img-rounded img-responsive" alt=poke-image width="500px">
+  <button {{action 'profileShow'}} class="btn btn-primary"> Show profile</button>
+  {{/if}}
+</div>
